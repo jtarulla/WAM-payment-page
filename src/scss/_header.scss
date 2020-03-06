@@ -1,0 +1,65 @@
+header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: $primary-color;
+	width: 100%;
+	height: 4.375rem;
+
+	.logo {
+		position: absolute;
+		left: 10.76%;
+		right: 77.08%;
+		top: 24.29%;
+		bottom: 22.86%;
+	}
+
+	.navbar {
+		top: 0;
+		left: 0;
+		li {
+			font-weight: bold;
+			text-transform: uppercase;
+			.item-name {
+				&-help {
+					@include navbarFont;
+					position: absolute;
+					left: 69.72%;
+					right: 25.69%;
+					top: 32.86%;
+					bottom: 31.43%;
+				}
+				&-signin {
+					@include navbarFont;
+					position: absolute;
+					width: fit-content;
+					left: 78.68%;
+					right: 16.46%;
+					top: 32.86%;
+					bottom: 31.43%;
+					&-img {
+						position: relative;
+					}
+				}
+				&-es {
+					@include navbarFont;
+					position: absolute;
+					left: 85.9%;
+					right: 12.43%;
+					top: 32.86%;
+					bottom: 31.43%;
+					img {
+						left: 24.99%;
+						right: 25%;
+						top: 33.33%;
+						bottom: 29.17%;
+					}
+				}
+			}
+		}
+
+		ul {
+			list-style-type: none;
+		}
+	}
+}
