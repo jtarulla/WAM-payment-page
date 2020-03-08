@@ -1,0 +1,133 @@
+.container {
+	position: absolute;
+	left: 10.7%;
+	bottom: 13.5%;
+	height: 62.7%;
+	width: 78.5%;
+	background: $primary-color;
+	box-shadow: $box-shadow;
+
+	.btn-continue,
+	.btn-pay {
+		img {
+			position: absolute;
+			bottom: 7%;
+			right: 28.6%;
+			@include btnSize;
+		}
+	}
+
+	.btn-back {
+		img {
+			position: absolute;
+			bottom: 7%;
+			left: 29%;
+			@include btnSize;
+		}
+	}
+
+	h2 {
+		@include titleFont;
+		font-size: 24px;
+		line-height: 0%;
+		padding-top: 3%;
+	}
+
+	p {
+		@include paragraphFont;
+		font-size: 14px;
+		// line-height: 20px;
+	}
+
+	.form-area {
+		position: absolute;
+		width: 42%;
+		height: 32.6%;
+		top: 1.7%;
+		left: 29.7%;
+		label {
+			@include formFont;
+			font-size: 14px;
+			line-height: 32px;
+
+			input {
+				@include formFont;
+				font-size: 112.5%;
+				line-height: 175%;
+				padding: 1% 1% 1% 1%;
+				display: flex;
+				align-items: center;
+				width: 100%;
+				border-radius: 0;
+				border: 2px solid #e6e6e6;
+				box-sizing: border-box;
+				&:focus {
+					border: 2px solid #3d8fcb;
+					box-sizing: border-box;
+				}
+			}
+		}
+	}
+
+	.card-area {
+		position: absolute;
+		text-align: center;
+		left: 29%;
+		width: 42.5%;
+		height: 50%;
+		border: $line;
+		border-radius: 4px;
+		h3 {
+			@include paragraphFont;
+			font-size: 16px;
+			line-height: 0px;
+			font-weight: bold;
+		}
+
+		p {
+			@include paragraphFont;
+			font-size: 14px;
+			padding-left: 8.9%;
+			padding-right: 8.9%;
+		}
+
+		.card-net {
+			img {
+				height: auto;
+				max-width: 18%;
+			}
+		}
+
+		.card {
+			img {
+				padding-top: 3%;
+				height: auto;
+				max-width: 10%;
+			}
+		}
+	}
+
+	.loading {
+		text-align: center;
+		padding-top: 15%;
+	}
+
+	.success {
+		text-align: center;
+		h2 {
+			@include titleFont;
+			font-size: 26px;
+		}
+		p {
+			@include paragraphFont;
+			font-size: 14px;
+			padding-left: 24%;
+			padding-right: 24%;
+		}
+		img {
+			padding-top: 10%;
+			height: auto;
+			max-width: 5%;
+		}
+	}
+}

@@ -17,25 +17,29 @@ export const Header = () => {
 				</a>
 			</div>
 
-			<div class='navbar'>
+			<div className='navbar'>
 				<div className='navbar-list'>
 					<ul>
 						<li className='navbar-item'>
-							<a class='item-name-help' href='#help'>
+							<a className='item-name-help' href='#help'>
 								<img src={help} alt='help' />
-								ayuda
+								<span>ayuda</span>
 							</a>
 						</li>
 
 						<li className='navbar-item'>
-							<a class='item-name-signin' href='#signin'>
-								<img class='item-name-signin-img' src={signin} alt='signin' />
-								sign in
+							<a className='item-name-signin' href='#signin'>
+								<img
+									className='item-name-signin-img'
+									src={signin}
+									alt='signin'
+								/>
+								<span>sign in</span>
 							</a>
 						</li>
 
-						<li className='navbar-item with-submenu'>
-							<a class='item-name-es' href='#es'>
+						<li className='navbar-item'>
+							<a className='item-name-es' href='#es'>
 								es
 								<img src={arrow} alt='arrow' />
 							</a>

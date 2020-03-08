@@ -1,0 +1,28 @@
+@import 'config';
+@import 'header';
+@import 'footer';
+@import 'container';
+@import 'numbers';
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: auto;
+	width: 100%;
+	background: $secondary-color;
+	display: block;
+	overflow: hidden;
+	font-size: 100%;
+}
+
+@import 'mobile';
