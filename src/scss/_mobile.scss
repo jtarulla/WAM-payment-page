@@ -1,0 +1,437 @@
+//======== Mobile Phones ========//
+@include mediaSm {
+	.container {
+		width: 85%;
+		height: 60%;
+		left: 7%;
+
+		h2 {
+			@include titleFont;
+			font-size: 20px;
+			line-height: 0%;
+			padding: 3% 1% 0% 1%;
+		}
+
+		p {
+			@include paragraphFont;
+			font-size: 12px;
+			padding: 3% 1% 0% 1%;
+		}
+
+		.form-area {
+			position: absolute;
+			width: 82%;
+			top: 3%;
+			left: 10%;
+			padding: 1% 1% 1% 1%;
+			label {
+				font-size: 12px;
+				line-height: 32px;
+
+				input {
+					font-size: 100%;
+					line-height: 175%;
+				}
+			}
+		}
+
+		.btn-continue,
+		.btn-pay {
+			img {
+				width: 110px;
+				bottom: 6%;
+				right: 8%;
+			}
+		}
+
+		.btn-back {
+			img {
+				width: 110px;
+				bottom: 6%;
+				left: 8%;
+			}
+		}
+		.card-area {
+			left: 8%;
+			width: 82.5%;
+			height: 50%;
+			h3 {
+				font-size: 16px;
+				line-height: 0px;
+				font-weight: bold;
+			}
+
+			p {
+				font-size: 12px;
+				padding-left: 1%;
+				padding-right: 1%;
+			}
+
+			.card-net {
+				img {
+					max-width: 60px;
+				}
+			}
+
+			.card {
+				img {
+					padding-top: 2%;
+					max-width: 45px;
+				}
+			}
+		}
+
+		.loading {
+			padding-top: 25%;
+		}
+
+		.success {
+			h2 {
+				font-size: 20px;
+			}
+			p {
+				font-size: 14px;
+				padding-left: 6%;
+				padding-right: 6%;
+			}
+			img {
+				padding-top: 26%;
+				max-width: 15%;
+			}
+		}
+	}
+	.page-number {
+		text-align: center;
+		padding-top: 5%;
+
+		img {
+			height: auto;
+			max-width: 270px;
+		}
+	}
+	header {
+		.logo {
+			position: absolute;
+			left: 4%;
+			top: 24.29%;
+			img {
+				max-width: 150px;
+				height: auto;
+			}
+		}
+		.navbar {
+			li {
+				display: none;
+			}
+			.menu {
+				top: 34%;
+				display: block;
+				font-size: 14px;
+			}
+		}
+		.navbar-list.responsive {
+			.menu {
+				display: none;
+				&-close {
+					top: 34%;
+					font-size: 16px;
+					display: inline;
+				}
+			}
+
+			position: inherit;
+			li {
+				float: right;
+				display: initial;
+				text-align: left;
+				.item-name {
+					&-help {
+						font-size: 12px;
+						right: -100px;
+						top: 36%;
+						img {
+							max-width: 18%;
+						}
+
+						//======== Animation ========//
+						@include slide-help;
+
+						@-webkit-keyframes slide-help {
+							100% {
+								right: 26%;
+							}
+						}
+						@keyframes slide-help {
+							100% {
+								right: 32%;
+							}
+						}
+						//======== Animation ========//
+					}
+					&-signin {
+						font-size: 12px;
+						right: -100px;
+						top: 36%;
+						img {
+							max-width: 18%;
+						}
+
+						//======== Animation ========//
+						@include slide-signin;
+						@-webkit-keyframes slide-signin {
+							100% {
+								right: 15%;
+							}
+						}
+						@keyframes slide-signin {
+							100% {
+								right: 15%;
+							}
+						}
+						//======== Animation ========//
+					}
+					&-es {
+						font-size: 12px;
+						right: -100px;
+						top: 36%;
+						img {
+							max-width: 35%;
+						}
+						//======== Animation ========//
+						@include slide-es;
+						@-webkit-keyframes slide-es {
+							100% {
+								right: 6%;
+							}
+						}
+						@keyframes slide-es {
+							100% {
+								right: 6%;
+							}
+						}
+						//======== Animation ========//
+					}
+				}
+			}
+		}
+	}
+
+	footer {
+		.logo {
+			position: absolute;
+			right: 5%;
+		}
+		.copyright {
+			left: 5%;
+		}
+	}
+}
+
+//======== IPad and Netbooks ========//
+@include mediaMd {
+	.container {
+		width: 85%;
+		height: 60%;
+		left: 7%;
+
+		h2 {
+			@include titleFont;
+			font-size: 22px;
+			line-height: 0%;
+			padding: 2% 1% 0% 1%;
+		}
+
+		p {
+			@include paragraphFont;
+			font-size: 14px;
+			padding: 1% 1% 0% 1%;
+		}
+
+		.form-area {
+			position: absolute;
+			width: 55%;
+			top: 0%;
+			left: 24%;
+			padding: 0% 1% 1% 1%;
+			label {
+				font-size: 14px;
+				line-height: 32px;
+
+				input {
+					font-size: 100%;
+					line-height: 175%;
+				}
+			}
+		}
+
+		.btn-continue,
+		.btn-pay {
+			img {
+				width: 120px;
+				bottom: 8%;
+				right: 18%;
+			}
+		}
+
+		.btn-back {
+			img {
+				width: 120px;
+				bottom: 8%;
+				left: 16%;
+			}
+		}
+		.card-area {
+			left: 15%;
+			width: 68%;
+			height: 50%;
+			h3 {
+				font-size: 18px;
+				line-height: 0px;
+				font-weight: bold;
+			}
+
+			p {
+				@include paragraphFont;
+				font-size: 14px;
+				padding-left: 1%;
+				padding-right: 1%;
+			}
+
+			.card-net {
+				img {
+					max-width: 60px;
+				}
+			}
+
+			.card {
+				img {
+					padding-top: 2%;
+					max-width: 40px;
+				}
+			}
+		}
+
+		.loading {
+			padding-top: 25%;
+		}
+
+		.success {
+			h2 {
+				font-size: 24px;
+			}
+			p {
+				font-size: 16px;
+				padding-left: 6%;
+				padding-right: 6%;
+			}
+			img {
+				padding-top: 12%;
+				max-width: 50px;
+			}
+		}
+	}
+	.page-number {
+		padding-top: 3%;
+		img {
+			max-width: 250px;
+		}
+	}
+
+	header {
+		.navbar {
+			li {
+				display: none;
+			}
+			.menu {
+				display: block;
+			}
+		}
+		.navbar-list.responsive {
+			.menu {
+				display: none;
+				&-close {
+					display: inline;
+				}
+			}
+
+			position: inherit;
+			li {
+				float: right;
+				display: initial;
+				text-align: left;
+				.item-name {
+					&-help {
+						position: absolute;
+						right: -100px;
+						font-size: 13px;
+						img {
+							max-width: 20%;
+						}
+						// Animation
+						@include slide-help;
+
+						@-webkit-keyframes slide-help {
+							100% {
+								right: 26%;
+							}
+						}
+						@keyframes slide-help {
+							100% {
+								right: 26%;
+							}
+						}
+					}
+					&-signin {
+						font-size: 13px;
+						right: -100px;
+						img {
+							max-width: 20%;
+						}
+
+						// Animation
+						@include slide-signin;
+						@-webkit-keyframes slide-signin {
+							100% {
+								right: 13.5%;
+							}
+						}
+						@keyframes slide-signin {
+							100% {
+								right: 13.5%;
+							}
+						}
+					}
+					&-es {
+						font-size: 13px;
+						right: -100px;
+						img {
+							max-width: 40%;
+						}
+						// Animation
+						@include slide-es;
+						@-webkit-keyframes slide-es {
+							100% {
+								right: 6%;
+							}
+						}
+						@keyframes slide-es {
+							100% {
+								right: 6%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	footer {
+		.logo {
+			position: absolute;
+			right: 7%;
+			img {
+				max-width: 150px;
+			}
+		}
+	}
+}

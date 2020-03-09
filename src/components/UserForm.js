@@ -5,7 +5,11 @@ import page from '../assets/page-1.png';
 export class UserForm extends Component {
 	continue = e => {
 		e.preventDefault();
-		this.props.nextStep();
+		const { values } = this.props;
+
+		if (values.firstName !== '' && values.lastName !== '') {
+			this.props.nextStep();
+		}
 	};
 
 	render() {
@@ -30,9 +34,9 @@ export class UserForm extends Component {
 									type='text'
 									id='firstName'
 									name='firstName'
-									placeholder='Nombre'
 									onChange={handleChange('firstName')}
 									defaultValue={values.firstName}
+									autoFocus={true}
 									required
 								/>
 							</label>
@@ -42,7 +46,6 @@ export class UserForm extends Component {
 									type='text'
 									id='lastName'
 									name='lastName'
-									placeholder='Apellidos'
 									onChange={handleChange('lastName')}
 									defaultValue={values.lastName}
 									required

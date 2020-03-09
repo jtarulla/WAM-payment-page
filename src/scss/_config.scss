@@ -1,11 +1,40 @@
-// Variables
+///======== Variables ========//
+
 $primary-color: #fff;
 $secondary-color: #f5f5f5;
 $line: 1px solid #e0e0e0;
 $box-shadow: 0px 8px 16px rgba(48, 49, 51, 0.1),
 	0px 0px 1px rgba(48, 49, 51, 0.05);
 
-// Fonts Mixins
+//======== Transition Mixins ========//
+
+@mixin easeOut {
+	transition: all 0.5s ease-out;
+}
+
+@mixin slide-help {
+	-webkit-animation: slide-help 0.5s forwards;
+	-webkit-animation-delay: 0.1s;
+	animation: slide-help 0.5s forwards;
+	animation-delay: 0.1s;
+}
+
+@mixin slide-signin {
+	-webkit-animation: slide-signin 0.4s forwards;
+	-webkit-animation-delay: 0.1s;
+	animation: slide-signin 0.4s forwards;
+	animation-delay: 0.1s;
+}
+
+@mixin slide-es {
+	-webkit-animation: slide-es 0.3s forwards;
+	-webkit-animation-delay: 0.1s;
+	animation: slide-es 0.3s forwards;
+	animation-delay: 0.1s;
+}
+
+//======== Fonts Mixins ========//
+
 @mixin titleFont {
 	font-family: 'Raleway', sans-serif;
 	font-style: normal;
@@ -31,6 +60,7 @@ $box-shadow: 0px 8px 16px rgba(48, 49, 51, 0.1),
 	font-family: 'Muli', sans-serif;
 	font-style: normal;
 	font-weight: bold;
+	text-transform: uppercase;
 	font-size: 14px;
 	display: flex;
 	align-items: center;
@@ -47,39 +77,24 @@ $box-shadow: 0px 8px 16px rgba(48, 49, 51, 0.1),
 	color: #bdbdbd;
 }
 
-// Button Size
+//======== Button Size Mixin ========//
+
 @mixin btnSize {
-	width: 14.6%;
+	width: 130px;
 	height: auto;
 	cursor: pointer;
 }
 
-// Media Query Mixins
-@mixin mediaXs {
-	@media screen and (min-width: 350px) and (max-width: 400px) {
-		@content;
-	}
-}
+//======== Media Query Mixins ========//
+
 @mixin mediaSm {
-	@media screen and (max-width: 500px) {
+	@media screen and (min-width: 300px) and(max-width: 550px) {
 		@content;
 	}
 }
 
 @mixin mediaMd {
-	@media screen and (max-width: 768px) {
-		@content;
-	}
-}
-
-@mixin mediaLg {
-	@media screen and (min-width: 769px) and (max-width: 1170px) {
-		@content;
-	}
-}
-
-@mixin mediaXl {
-	@media screen and (min-width: 1171px) {
+	@media screen and (min-width: 551px) and (max-width: 980px) {
 		@content;
 	}
 }
