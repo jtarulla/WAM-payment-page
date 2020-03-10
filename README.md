@@ -2,13 +2,9 @@
 
 ## Requirements
 
-For development, it will only need Node.js installed on your environment.
-
 ### Node
 
 [Node](http://nodejs.org/) include [NPM](https://npmjs.org/).
-You should be able to run the following command after the installation procedure
-below.
 
     $ node --version
     v13.02.0
