@@ -55,7 +55,7 @@ export class UserForm extends Component {
 					</div>
 
 					<div className='btn-continue' onClick={this.continue}>
-						<img src={nextButton} alt='pay-button' />
+						<img src={nextButton} alt='next-button' />
 					</div>
 				</div>
 			</>

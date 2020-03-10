@@ -4,11 +4,17 @@ import Payment from './Payment';
 import Success from './Success';
 
 export class PaymentProcess extends Component {
-	state = {
-		step: 1,
-		firstName: '',
-		lastName: ''
-	};
+	constructor(props) {
+		super(props);
+		this.state = {
+			step: 1,
+			firstName: '',
+			lastName: ''
+		};
+		this.nextStep = this.nextStep.bind(this);
+		this.prevStep = this.prevStep.bind(this);
+		this.handleChange = this.handleChange.bind(this);
+	}
 
 	// Proceed to next step
 	nextStep = () => {

@@ -5,18 +5,18 @@ import signin from '../../assets/navbar-icons/signin.png';
 import arrow from '../../assets/navbar-icons/arrow.png';
 
 export class Header extends Component {
-	dropdown = () => {
-		var x = document.getElementById('navbar-list');
-		if (x.className === 'navbar-list') {
-			x.className += ' responsive';
+	openMenu = () => {
+		var element = document.getElementById('navbar-list');
+		if (element.className === 'navbar-list') {
+			element.className += ' responsive';
 		} else {
-			x.className = 'navbar-list';
+			element.className = 'navbar-list';
 		}
 	};
 
 	render() {
 		return (
-			<header className='header' data-testid='header'>
+			<header className='header'>
 				<div className='logo'>
 					<a
 						href='https://www.wearemarketing.com/es/'
@@ -55,10 +55,10 @@ export class Header extends Component {
 								</a>
 							</li>
 						</ul>
-						<div className='menu' onClick={this.dropdown}>
+						<div className='menu' onClick={this.openMenu}>
 							Menú
 						</div>
-						<div className='menu-close' onClick={this.dropdown}>
+						<div className='menu-close' onClick={this.openMenu}>
 							&#10005;
 						</div>
 					</div>

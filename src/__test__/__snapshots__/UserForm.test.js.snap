@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserForm component renders without error given the required props 1`] = `
+<UserForm
+  handleChange={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          "firstName",
+        ],
+        Array [
+          "lastName",
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  nextStep={[MockFunction]}
+  values={
+    Object {
+      "firstName": "First",
+      "lastName": "Last",
+    }
+  }
+>
+  <div
+    className="page-number"
+  >
+    <img
+      alt="page-number"
+      src="page-1.png"
+    />
+  </div>
+  <div
+    className="container"
+  >
+    <div
+      className="form-area"
+    >
+      <h2>
+        Mis Datos
+      </h2>
+      <p>
+        Revisa los datos y completa aquellos pendientes antes de continuar con el proceso.
+      </p>
+      <br />
+      <form>
+        <label>
+          Nombre
+          <input
+            autoFocus={true}
+            defaultValue="First"
+            id="firstName"
+            name="firstName"
+            required={true}
+            type="text"
+          />
+        </label>
+        <label>
+          Apellidos
+          <input
+            defaultValue="Last"
+            id="lastName"
+            name="lastName"
+            required={true}
+            type="text"
+          />
+        </label>
+      </form>
+    </div>
+    <div
+      className="btn-continue"
+      onClick={[Function]}
+    >
+      <img
+        alt="next-button"
+        src="btn-next.png"
+      />
+    </div>
+  </div>
+</UserForm>
+`;

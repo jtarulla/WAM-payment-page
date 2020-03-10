@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Payment component renders without error given the required props 1`] = `
+<Fragment>
+  <div
+    className="page-number"
+  >
+    <img
+      alt="page-number"
+      src="page-2.png"
+    />
+  </div>
+  <div
+    className="container"
+  >
+    <h2>
+      Pago del producto
+    </h2>
+    <p>
+      Una vez efectuado el pago del producto, recibirás un email con los detalles de la compra.
+    </p>
+    <div
+      className="card-area"
+    >
+      <div
+        className="card"
+      >
+        <img
+          alt="card-networks"
+          src="card.png"
+        />
+      </div>
+      <h3>
+        Tarjeta de crédito
+      </h3>
+      <p>
+        Se redirigirá a una plataforma de pago. Se trata de un proceso seguro. Puede que la validación del pago tarde 24 horas en completarse.
+      </p>
+      <div
+        className="card-net"
+      >
+        <img
+          alt="card-networks"
+          src="card_networks.png"
+        />
+      </div>
+    </div>
+    <div
+      className="btn-back"
+      onClick={[Function]}
+    >
+      <img
+        alt="back-button"
+        src="btn-back.png"
+      />
+    </div>
+    <div
+      className="btn-continue"
+      onClick={[Function]}
+    >
+      <img
+        alt="pay-button"
+        src="btn-pay.png"
+      />
+    </div>
+  </div>
+</Fragment>
+`;

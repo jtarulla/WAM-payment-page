@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaymentProcess Component renders PaymentProcess component without errors 1`] = `
+<UserForm
+  handleChange={[Function]}
+  nextStep={[Function]}
+  values={
+    Object {
+      "firstName": "",
+      "lastName": "",
+    }
+  }
+/>
+`;

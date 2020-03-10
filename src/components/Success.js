@@ -3,12 +3,16 @@ import page from '../assets/page-3.png';
 import success from '../assets/success.png';
 import loading from '../assets/loading.gif';
 
-export class Payment extends Component {
-	state = {
-		loading: true,
-		message: null
-	};
+export class Success extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			loading: true,
+			message: null
+		};
+	}
 
+	// Fetch Success Message from API
 	async componentDidMount() {
 		const url = 'http://www.mocky.io/v2/5e3d41272d00003f7ed95c09';
 		const response = await fetch(url);
@@ -18,9 +22,6 @@ export class Payment extends Component {
 
 	render() {
 		const { message } = this.state;
-
-		if (this.state.loading) {
-		}
 
 		return (
 			<>
@@ -45,4 +46,4 @@ export class Payment extends Component {
 	}
 }
 
-export default Payment;
+export default Success;

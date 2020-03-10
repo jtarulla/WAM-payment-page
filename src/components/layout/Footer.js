@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from '../../assets/logo.jpg';
 
-export const Footer = () => {
+const Footer = () => {
 	return (
-		<footer className='footer' data-testid='footer'>
+		<footer className='footer'>
 			<>
 				<div className='copyright'>2020 &copy; We Are Marketing</div>
 
@@ -20,3 +20,5 @@ export const Footer = () => {
 		</footer>
 	);
 };
+
+export default Footer;

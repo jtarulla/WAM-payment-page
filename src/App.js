@@ -2,10 +2,10 @@ import React from 'react';
 import './scss/main.scss';
 
 import { Header } from './components/layout/Header';
-import { Footer } from './components/layout/Footer';
-import { PaymentProcess } from './components/PaymentProcess';
+import Footer from './components/layout/Footer';
+import PaymentProcess from './components/PaymentProcess';
 
-export const App = () => {
+const App = () => {
 	return (
 		<>
 			<Header />
@@ -14,3 +14,5 @@ export const App = () => {
 		</>
 	);
 };
+
+export default App;
