@@ -4,7 +4,7 @@
 
 ### Node
 
-[Node](http://nodejs.org/) include [NPM](https://npmjs.org/).
+[Node](http://nodejs.org/) includes [NPM](https://npmjs.org/).
 
     $ node --version
     v13.02.0
