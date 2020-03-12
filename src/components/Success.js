@@ -14,7 +14,7 @@ export class Success extends Component {
 
 	// Fetch Success Message from API
 	async componentDidMount() {
-		const url = 'http://www.mocky.io/v2/5e3d41272d00003f7ed95c09';
+		const url = 'https://www.mocky.io/v2/5e3d41272d00003f7ed95c09';
 		const response = await fetch(url);
 		const data = await response.json();
 		this.setState({ message: data, loading: false });
